@@ -1,5 +1,18 @@
 @import "./abstracts/variables_color";
 @import "./abstracts/variables";
+@import "./abstracts/mixin_common";
 
 @import "./base/reset";
 @import "./base/preset";
+
+@import "./pages/order_page";
+
+@import "./components/popup";
+@import "./components/header";
+@import "./components/order_info";
+@import "./components/order_recent";
+@import "./components/menu__category";
+@import "./components/menu_list";
+@import "./components/menu_item";
+@import "./components/order_box";
+@import "./components/go_top";

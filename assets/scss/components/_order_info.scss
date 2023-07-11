@@ -1,0 +1,94 @@
+.order__info {
+  padding: 10px $m-padding 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  background-color: $booking-color-bg155;
+
+  .order__title {
+    line-height: 39px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: $booking-color-text6;
+    .ico_n_logo {
+      margin-right: 6px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .order__tablist {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+
+    .order__tab-switch {
+      flex: 1;
+      text-align: center;
+      background-color: $booking-color-bg158;
+      line-height: 40px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #666;
+      letter-spacing: -0.3px;
+
+      &.is-active {
+        background-color: $booking-color-bg157;
+        flex-grow: 1.2;
+        border: 1px solid $booking-color-border145;
+        font-size: 15px;
+        color: $booking-color-text126;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: -6px;
+          width: 10px;
+          height: 10px;
+          background-color: $booking-color-bg157;
+          border: 1px solid $booking-color-border145;
+          border-width: 0 1px 1px 0;
+          transform: translate(-50%) rotate(45deg);
+        }
+
+        .ico-check {
+          display: inline-block;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .ico-check {
+    vertical-align: middle;
+    display: none;
+    opacity: 0;
+  }
+
+  .order__notice {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    color: #333;
+    letter-spacing: -0.3px;
+
+    &.alert {
+      color: $point-color;
+      font-weight: 700;
+
+      .ico-clock {
+        margin-right: 6px;
+      }
+    }
+  }
+}
