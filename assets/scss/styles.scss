@@ -18,6 +18,8 @@
 @import "./components/menu/order_box";
 @import "./components/menu/go_top";
 
-@import "./components/detail/menu__detail";
+@import "./components/detail/menu__detail-area";
 @import "./components/detail/menu__review";
-@import "./components/detail/option__popup";
+@import "./components/detail/popup__option";
+
+@import "./components/amount__select";
