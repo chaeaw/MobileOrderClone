@@ -1,7 +1,10 @@
 .container {
-  padding-top: calc($header__top-height + $header__nav-height);
-  padding-bottom: $order__box-height;
   background-color: $booking-color-border151;
+  min-height: 100vh;
+  &:not(.order) {
+    padding-top: calc($header__top-height + $header__nav-height);
+    padding-bottom: $order__box-height;
+  }
 }
 
 .common-inner {

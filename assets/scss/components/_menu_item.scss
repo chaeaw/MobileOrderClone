@@ -11,28 +11,28 @@
     display: flex;
     align-items: center;
     flex: 1;
+  }
 
-    .menu__detail-img {
-      position: relative;
-      flex-shrink: 0;
-      margin-right: 12px;
-      border-radius: 5px;
-      overflow: hidden;
+  .menu__img {
+    display: block;
+  }
+}
 
-      &:not(.no-img)::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.06);
-      }
+.menu__detail-img {
+  position: relative;
+  flex-shrink: 0;
+  margin-right: 12px;
+  border-radius: 5px;
+  overflow: hidden;
 
-      .menu__img {
-        display: block;
-      }
-    }
+  &:not(.no-img)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.06);
   }
 
   .menu__desc {

@@ -5,10 +5,12 @@
 @import "./base/reset";
 @import "./base/preset";
 
-@import "./pages/order_page";
+@import "./pages/common";
 
 @import "./components/header";
 @import "./components/menu_item";
+@import "./components/go_top";
+@import "./components/amount__select";
 
 @import "./components/menu/popup";
 @import "./components/menu/order_info";
@@ -16,10 +18,12 @@
 @import "./components/menu/menu__category";
 @import "./components/menu/menu_list";
 @import "./components/menu/order_box";
-@import "./components/menu/go_top";
 
 @import "./components/detail/menu__detail-area";
 @import "./components/detail/menu__review";
 @import "./components/detail/popup__option";
 
-@import "./components/amount__select";
+@import "./components/order/order__content-extra";
+@import "./components/order/order__content";
+@import "./components/order/order__form";
+@import "./components/order/modal";

@@ -3,9 +3,19 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 0;
+  opacity: 0;
   overflow: hidden;
-  z-index: 5000;
+
+  &.show {
+    height: 100%;
+    opacity: 1;
+    z-index: 5000;
+
+    .popup__option-menu {
+      transform: translateY(0);
+    }
+  }
 
   .popup__option-menu {
     position: fixed;
@@ -15,7 +25,9 @@
     max-height: calc(100% - 45px);
     width: 100%;
     background-color: $booking-color-border151;
-    z-index: 100000;
+    z-index: 10000;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
   }
   .content-top-pattern {
     position: absolute;

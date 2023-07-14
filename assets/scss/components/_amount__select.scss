@@ -23,13 +23,15 @@
       background-color: currentColor;
     }
 
-    &:enabled {
+    &:disabled,
+    &.disabled {
+      color: $booking-color-border102;
+    }
+
+    &.enabled {
       border-color: $green;
       background-color: $green;
       color: #fff;
-    }
-    &:disabled {
-      color: $booking-color-border102;
     }
   }
 
